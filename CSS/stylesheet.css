@@ -19,142 +19,183 @@
 
 
 body {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    width: 100%;
     margin: 0;
-    
+    padding: 0;
 }
 
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 .topbox {
-    box-sizing: border-box;
     width: 100%;
     height: 2em;
     background-color: #777e5f;
 }
-.titleAndLogo{
-    box-sizing: border-box;
+
+
+.titleAndLogo {
     min-height: 10vh;
-    width: 85%;
+    width: 100%;
     margin: auto;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-
-}
-.titleAndLogo .titulo {
-    font-family:"Nanum Gothic";
-    font-weight: 800;
-    box-sizing: border-box;
+    padding: 1em 0;
     text-align: center;
-    font-size: 50px; 
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin: 0;
+}
+
+.titleAndLogo .titulo {
+    font-weight: 800;
+    font-size: 2.5em; 
+    margin: 0 1em; 
 }
 
 .titleAndLogo .logo {
     height: 3em;
-    box-sizing: border-box;
-    padding: 0;
+    margin-right: 1em; 
 }
+
 
 .bottombox {
     width: 100%;
-    height: 100%;
     background-color: #777e5f;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    padding: 1em 0;
 }
 
 .bottombox .menu {
-    font-family:"Nanum Gothic";
     font-weight: 700;
-    box-sizing: border-box;
-    font-size: 1.2em; 
-    text-align: center;
-    box-sizing: border-box;    
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1em;
 }
 
 .bottombox .menu .menuitem {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #DAD2B9;
-    height: 2em;
-    width: 15em;
-    list-style: none;
-    padding: 0.5em;
-    margin: 0.5em; 
+    height: 3em;
+    padding: 0 1.5em;
+    margin: 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.bottombox .menu .menuitem .colorTexto {
+    color: #3F4D49;
+    text-decoration: none;
+    font-size: 1em;
     text-align: center;
 }
-.bottombox .menu .menuitem .colorTexto {
-    color:#3F4D49;
+
+.bottombox .menu .menuitem:hover {
+    background-color: #c5b89b;
+    transform: scale(1.05);
+}
+
+.bottombox .menu .menuitem .colorTexto:hover {
+    color: #2a2f2d;
+}
+
+
+
+.faqsMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqsMain .faqsYRta {
+    width: 100%;
+    margin: 5% auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.faqsMain .faqsYRta .faqs {
+    padding: 1em;
+    width: 85%;
+    background-color: #819281;
+    font-size: 1.3em;
     text-align: center;
-    text-decoration: none;
-    
+    margin: 2% auto;
+    border-radius: 0.5em;
+    font-weight: 800;
+}
+
+.faqsMain .faqsYRta .respuestas {
+    padding: 1em;
+    width: 85%;
+    font-size: 1.2em;
+    background-color: #DAD2B9;
+    text-align: center;
+    border-radius: 0.5em;
 }
 
 .mainTextBox {
     box-sizing: border-box;
-    background-color: #BEBB98;
-    min-height: 40vh;
-    width: 85%;
-    margin: 2% auto;
-    padding: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
+    flex: 1; 
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .mainTextBox .slogan {
     background-color: #DAD2B9;
-    padding: 20px;
     width: 100%;
     text-align: center;
-    font-size: 2em; 
-    font-family:"Nanum Gothic";
+    font-size: 2em;
+    font-family: "Nanum Gothic";
     font-weight: 400;
     letter-spacing: 1px;
+    padding: 1em;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
-.mainTextBox .mainPic {
-    margin-top: 20px;
+#carouselExampleIndicators {
     width: 100%;
-    max-width: 100%;
-    height: 100%;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin-right: 20px;
-    flex-direction: row;
-}
-.mainTextBox .mainPic img{
-    width: 50%;
-}
-
-.footer {
-    width: 100%;
-    height: 100px;
-    background-color: #777e5f;
     margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
 }
 
-.footer .footerText {
-    text-align: center;
-    font-size: 1.5em; 
-    font-family:"Nanum Gothic";
-    font-weight: 700;
-    color:#3F4D49
+.carousel-item img {
+    height: auto; 
+    width: 100%;
+    margin-bottom: 0;
 }
+
 
 .whoAreWe{
     box-sizing: border-box;
-    background-color:white;
+    background-color: ffffff;
     min-height: 40vh;
     width: 85%;
     margin: 1% auto;
@@ -166,8 +207,7 @@ body {
 .whoAreWe .textoWhoAreWe{
     font-family:"Nanum Gothic";
     font-weight: 700;
-    color: #3F4D49;
-    background-color:#DAD2B9;
+    color: 1f1f1f;
     box-sizing: border-box;
     font-size: 2em;
 }
@@ -176,7 +216,7 @@ body {
 }
 .listaServicios{
     box-sizing: border-box;
-    background-color:white;
+    background-color: ffffff;
     min-height: 40vh;
     width: 85%;
     margin: 3% auto;
@@ -192,10 +232,10 @@ body {
 }
 .listaServicios .imgServicios .serviceTypeImg{
     box-sizing: border-box;
-    background-color: #BEBB98;
     width:100%;
     border-radius: 5em;
-    margin: 2em 0;
+    margin: 3em 0;
+    margin-right: 2em;
     align-items: center; 
 }
 .listaServicios .textoServicios{
@@ -213,81 +253,153 @@ body {
     font-weight: 700;
     color: #3F4D49;
 }
-.faqsMain{
-    flex-direction: row;
-    margin: auto;
-    width: 100%;
-}
-.faqsMain .faqsYRta{
-    box-sizing: border-box;
-    list-style: none;
-    min-height: 40vh;
-    width: 100%;
-    margin: 5% auto;
-    padding: 2%;
+.faqsMain {
     display: flex;
-    align-items: center; 
-    background-color: #777e5f;
-}
-.faqsMain .faqsYRta .faqs {
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
     box-sizing: border-box;
-    padding: 0.3em;
-    height: 80%;
-    width: 85%;
-    background-color: #819281;
-    font-size: 1.3em;
-    justify-content: center;
-    text-align: center;
-    margin: 2% auto;
-    border-radius: 2em;
-    font-family:"Nanum Gothic";
-    font-weight: 800;
-
 }
-.faqsMain .faqsYRta .respuestas{
-    box-sizing: border-box;
-    height: 100%;
-    width:80%;
-    font-size: 1.2em;
-    margin: 4% auto;
-    padding: 10%;
-    justify-content:space-around;
-    text-align: center;
+
+.faqItem {
+    width: 85%;
+    margin: 10px 0;
+    padding: 20px;
     background-color: #DAD2B9;
-    border-radius: 1.5em;
-    font-family:"Nanum Gothic";
-    font-weight: 400;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.contactCard{
-    box-sizing: border-box;
-    background-color: #BEBB98;
-    min-height: 40vh;
-    width: 85%;
-    margin: 2% auto;
-    padding: 2.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-.contactCard .contact-text{
-    background-color: #3F4D49;
-    font-family:"Nanum Gothic";
-    font-weight: 800;
-    color: #BEBB98;
-    font-size: 3em;
-    list-style: none;
-    padding: 0.2em;
-    display: block;
 
+.faqItem .faqs {
+    font-family: "Nanum Gothic";
+    font-weight: 800;
+    font-size: 1.5em;
+    color: #3F4D49;
+    margin-bottom: 10px;
+    text-align: center;
 }
+
+.faqItem .respuestas {
+    font-family: "Nanum Gothic";
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    background-color: #BEBB98;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+.contactCard {
+    width: 80%;
+    max-width: 600px; 
+    margin: 2em auto; 
+    padding: 20px;
+    background-color: #DAD2B9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactCard h2 {
+    text-align: center;
+    font-size: 2em; 
+    margin-bottom: 1em; 
+}
+
+.form-group {
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #777e5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em; 
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #6c7459;
+}
+
+#confirmationMsg {
+    text-align: center;
+    font-weight: 700;
+    color: #6c7459;
+    margin-top: 10px;
+    display: none; 
+}
+
+.hidden {
+    display: none; 
+}
+.footer {
+    width: 100%;
+    background-color: #777e5f;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+    bottom: 0; 
+    left: 0; 
+    position: relative;
+}
+
+.footer .footerText {
+    margin: 0;
+    font-size: 1em;
+}
+.formFooter {
+    width: 100%;
+    background-color: #777e5f;
+    color: #fff; 
+    text-align: center;
+    padding: 1em; 
+    box-sizing: border-box; 
+    bottom: 0; 
+    left: 0; 
+    position: fixed;
+    margin-top: 0;
+}
+
 
 @media only screen and (max-width:768px){
     .bottombox{
         height: 100%;
     }
-    .mainTextBox .mainPic{
-        flex-direction: column;   
+    .bottombox .menu{
+        flex-direction: column;
+    }
+    .mainTextBox {
+        max-width: fit-content;
+        max-height: 30vh;
+        margin: 0 1em;
     }
     .mainTextBox .mainPic img{
         width: 70%;
@@ -306,9 +418,12 @@ body {
     .mainTextBox {
         width: 95%;
     }
+
+.whoAreWe {
+    flex-direction: column;
+}
     .listaServicios {
-        flex-direction: row; 
-        background-color: #BEBB98;    
+        flex-direction: row;  
         width: 100%;  
         padding: 2em;
     }
@@ -316,7 +431,7 @@ body {
     .listaServicios .imgServicios,
     .listaServicios .textoServicios {
         width: 100%;
-        font-size: 0.8em;
+        font-size: 0.6em;
 
     }
     .listaServicios .imgServicios .serviceTypeImg{
@@ -348,18 +463,17 @@ body {
 
     .contactCard .contact-text{
         
-        font-size:1.5em;
-        height: 100%;
+        font-size:1em;
     
+    }
+    .espacio{
+        height: 100px;
     }
     .whoAreWe .textoWhoAreWe{
         font-size: 0.9em;
         padding: 0.2em;
         width: 100%;
         height: 100%;
-    }
-    .whoAreWe .fotoFumigador{
-        width: 40%;
     }
     .mainTextBox .slogan {
         font-size: 1em;
@@ -369,7 +483,11 @@ body {
     }
     .footer .footerText{
         font-size: 1em;
-        
+    
+    }
+    .formFooter{
+        margin: 0;
+        position:relative;
     }
 }
 

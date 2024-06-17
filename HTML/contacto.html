@@ -8,38 +8,50 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
     </style>
-
 </head>
 <body>
-    <div class="topbox">
-    
-    </div>
+    <div class="topbox"></div>
 
     <div class="titleAndLogo">
-        <h1 class="titulo">  FR FRFUMIGACIONES</h1>
+        <h1 class="titulo">FR FRFUMIGACIONES</h1>
         <img class="logo" src="../IMAGENES/LOGO.png" alt="logo">
     </div>
 
     <div class="bottombox">
         <ul class="menu">
             <li class="menuitem"><a class="colorTexto" href="../index.html"> Menu</a></li>
-            <li class="menuitem"> <a class="colorTexto" href="quienessomos.html"> Quienes Somos</a> </li>
-            <li class="menuitem"> <a class="colorTexto" href="servicios.html"> Servicios</a> </li>
-            <li class="menuitem"><a class="colorTexto" href="faqs.html"> F.A.Q.S.</a> </li>
-            
-        </ul>    
+            <li class="menuitem"><a class="colorTexto" href="quienessomos.html"> Quienes Somos</a></li>
+            <li class="menuitem"><a class="colorTexto" href="servicios.html"> Servicios</a></li>
+            <li class="menuitem"><a class="colorTexto" href="faqs.html"> F.A.Q.S.</a></li>
+        </ul>
     </div>
-<div class="contactCard">
-    <div>
-    <ul class="contact-text">
-        <li class="contactinfo"><p >+54 911 5429 8526</p></li>
-        <li class="contactinfo"><class><p> frfumigaciones@gmail.com </p></li>
-    </ul>
+
+    <div class="contactCard">
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
     </div>
-</div>
-    <div class="footer">
-        <p class="footerText"> Servicio integral de control de plagas y desinfeccion de ambientes.</p>
-    </div>
+
+    <footer class="formFooter">
+        <p class="footerText">Servicio integral de control de plagas y desinfección de ambientes.</p>
+    </footer>
+
     
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/form.js"></script>
 </body>
 </html>
