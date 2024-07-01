@@ -490,4 +490,16 @@ button[type="submit"]:hover {
         position:relative;
     }
 }
-
+@media only screen and (max-width:900px){
+    .bottombox .menu {
+        font-size: 1em;
+    }
+    .footer .footerText{
+        font-size: 1em;
+    
+    }
+    .formFooter{
+        margin: 0;
+        position:relative;
+    }
+}
